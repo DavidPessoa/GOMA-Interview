@@ -8,6 +8,10 @@
 	src: url(../fonts/Roboto-Bold.ttf);
 }
 
+body{
+	margin: 0;
+}
+
 header #logo{
 	padding: 1.5%;
 	padding-left: 10%;
@@ -21,13 +25,15 @@ header h2{
 	font-family: roboto-bold;
 	font-size: 32px;
 	color: #00AEEF;
+	margin-right: 10%;
+	margin-top: 4.5%;
 	
 }
 
 header{
 	overflow: hidden;
 	margin:auto;
-	border-bottom: #cccccc 1.5px solid;
+	border-bottom: #CECECE 1.5px solid;
 
 }
 
@@ -56,7 +62,6 @@ header{
 
 
 #success p{
-/*	visibility: hidden;*/
 	background-color: #7ED321;
 	font-family: roboto-bold;
 	font-size: 16px;
@@ -65,16 +70,16 @@ header{
 }
 
 #success{
-	visibility: hidden;
+	visibility: hidden; 
 	margin: auto;
-	width: 38%;
+	width: 70%;
 
 }
 
 #fail{
-	visibility: hidden;
+/*	visibility: hidden;    */
 	margin: auto;
-	width: 38%;
+	width: 50%;
 }
 
 #fail p{
@@ -94,6 +99,7 @@ header{
 #form1{
 	max-width: 700px;
 	margin: auto;
+	margin-bottom: 4%;
 }
 
 #form1 h3{
@@ -105,6 +111,9 @@ header{
 #form1 label{
 		display: block;
 		margin: 5px;
+		font-size: 14px;
+		font-family: roboto-regular;
+		color: #00AEEF;
 	}	
 
 #form1 input{     
@@ -132,5 +141,20 @@ header{
 	border: 1px;
 	border-color: #00AEEF;
 	border-style: solid;
+}
 
+footer a{
+	font-size: 16px;
+	color: #00AEEF;
+	font-family: roboto-bold;
+	vertical-align: middle;
+	
+}
+
+footer{
+	display: flex;
+	height: 50px; 
+	background-color: #EEEEEE;
+	align-items: center;
+	justify-content: center;
 }
