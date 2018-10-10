@@ -1,0 +1,131 @@
+@font-face{
+	font-family: roboto-regular;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+	font-family: roboto-bold;
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+
+header #logo{
+	padding: 1.5%;
+	padding-left: 10%;
+	float: left;
+}
+
+header h2{
+	padding-right: 1%;
+	float: right;
+	vertical-align: middle;
+	font-family: roboto-bold;
+	font-size: 32px;
+	color: #00AEEF;
+	
+}
+
+header{
+	overflow: hidden;
+	margin:auto;
+	border-bottom: #cccccc 1.5px solid;
+
+}
+
+.welcome h3{
+	font-family: roboto-bold;
+	font-size: 22px;
+	color: #00AEEF;
+}
+
+.welcome p{
+	line-height: 22px;
+	font-family: roboto-bold;
+	font-size: 16px;
+	color: #4A4A4A;
+}
+
+.welcome {
+	text-align: center;
+}
+
+.subHeader a{
+	font-family: roboto-bold;
+	font-size: 14px;
+	color: #00AEEF;
+}
+
+
+#success p{
+/*	visibility: hidden;*/
+	background-color: #7ED321;
+	font-family: roboto-bold;
+	font-size: 16px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#success{
+	visibility: hidden;
+	margin: auto;
+	width: 38%;
+
+}
+
+#fail{
+	visibility: hidden;
+	margin: auto;
+	width: 38%;
+}
+
+#fail p{
+	background-color: #D0021B;
+	font-family: roboto-bold;
+	font-size: 16px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.form{
+	background-color: #EDF6F9;
+	max-width: 1150px;
+	margin: auto;
+}
+
+#form1{
+	max-width: 700px;
+	margin: auto;
+}
+
+#form1 h3{
+	 color: #00AEEF;
+	 font-size: 22px;
+	 font-family: roboto-bold;
+	 text-align: center;
+}
+#form1 label{
+		display: block;
+		margin: 5px;
+	}	
+
+#form1 input{
+	display: block;
+	margin: 5px;
+}
+
+#sendBtn{
+	border:0;
+	background-color: #00AEEF;
+	font-family: roboto-regular;
+	font-size: 14px;
+	color: #FFFFFF;
+	
+}
+
+#sendBtn:hover{
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 1px;
+	border-color: #00AEEF;
+	border-style: solid;
+
+}
