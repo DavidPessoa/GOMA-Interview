@@ -107,17 +107,22 @@ header{
 		margin: 5px;
 	}	
 
-#form1 input{
+#form1 input{     
 	display: block;
 	margin: 5px;
+	border-radius: 8px;
+	border-width: 1px;
+	border-color: #cccccc;
+	border-style: solid;
 }
 
 #sendBtn{
-	border:0;
+	border:0px;
 	background-color: #00AEEF;
 	font-family: roboto-regular;
 	font-size: 14px;
 	color: #FFFFFF;
+	cursor: pointer;
 	
 }
 
