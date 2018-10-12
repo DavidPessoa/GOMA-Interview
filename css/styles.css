@@ -16,34 +16,60 @@ header #logo{
 	padding: 1.5%;
 	padding-left: 10%;
 	float: left;
+
 }
 
+
 header h2{
-	padding-right: 1%;
+	
 	float: right;
 	vertical-align: middle;
 	font-family: roboto-bold;
 	font-size: 32px;
 	color: #00AEEF;
-	margin-right: 10%;
-	margin-top: 4.5%;
-	
+	position: relative;
+	right: 70px;
+	top:45px;
 }
 
 header{
 	overflow: hidden;
 	margin:auto;
+	height: 190px;
 	border-bottom: #CECECE 1.5px solid;
 
 }
 
-.welcome h3{
+.subHeader{
+	max-width: 1150px;
+	margin: auto;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+.subHeader h3{
+	display: inline;
+	padding: 0;
+	margin:0;
 	font-family: roboto-bold;
 	font-size: 22px;
 	color: #00AEEF;
+	left: 20px;
+	position: relative;
+}
+
+.subHeader a{
+	display: inline;
+	font-family: roboto-bold;
+	font-size: 14px;
+	color: #00AEEF;
+	float: right;
+	
 }
 
 .welcome p{
+
 	line-height: 22px;
 	font-family: roboto-bold;
 	font-size: 16px;
@@ -52,17 +78,15 @@ header{
 
 .welcome {
 	text-align: center;
+	width:100%;
+	margin: 0;
+	display: block;
+	position: relative;
+	left: 50;
 }
-
-.subHeader a{
-	font-family: roboto-bold;
-	font-size: 14px;
-	color: #00AEEF;
-}
-
 
 #success p{
-	background-color: #7ED321;
+
 	font-family: roboto-bold;
 	font-size: 16px;
 	text-align: center;
@@ -70,34 +94,46 @@ header{
 }
 
 #success{
-	visibility: hidden; 
-	margin: auto;
-	width: 70%;
 
+/*	visibility: hidden; */
+	margin: auto;
+	padding: 5px;
+	width: 50%;
+	background-color: #7ED321;
+	position: relative;
 }
 
 #fail{
 /*	visibility: hidden;    */
+
 	margin: auto;
+	padding: 5px;
 	width: 50%;
+	background-color: #D0021B;
+	margin-bottom: 5%;
 }
 
 #fail p{
-	background-color: #D0021B;
 	font-family: roboto-bold;
 	font-size: 16px;
 	text-align: center;
 	color: #FFFFFF;
+
 }
 
 .form{
 	background-color: #EDF6F9;
-	max-width: 1150px;
+	width: 75%;
 	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 30px;
+	margin-top: 20px;
+
 }
 
 #form1{
-	max-width: 700px;
+	clear: both;
+	max-width: 50%;
 	margin: auto;
 	margin-bottom: 4%;
 }
@@ -108,22 +144,27 @@ header{
 	 font-family: roboto-bold;
 	 text-align: center;
 }
+
 #form1 label{
 		display: block;
 		margin: 5px;
 		font-size: 14px;
 		font-family: roboto-regular;
 		color: #00AEEF;
-	}	
+}	
 
 #form1 input{     
-	display: block;
-	margin: 5px;
+	
+
+	margin-bottom: 2vw;
 	border-radius: 8px;
 	border-width: 1px;
 	border-color: #cccccc;
 	border-style: solid;
+	height: 25px;
 }
+
+
 
 #sendBtn{
 	border:0px;
@@ -132,16 +173,10 @@ header{
 	font-size: 14px;
 	color: #FFFFFF;
 	cursor: pointer;
+	display: block;
 	
 }
 
-#sendBtn:hover{
-	background-color: #FFFFFF;
-	color: #000000;
-	border: 1px;
-	border-color: #00AEEF;
-	border-style: solid;
-}
 
 footer a{
 	font-size: 16px;
@@ -154,7 +189,103 @@ footer a{
 footer{
 	display: flex;
 	height: 50px; 
+	margin-top: 70px;
 	background-color: #EEEEEE;
 	align-items: center;
 	justify-content: center;
+}
+
+
+.bigField{
+	width: 100%;
+}
+
+.smallField{
+	width: 50%;
+}
+
+.labelDiv{
+	display: inline;
+}
+
+
+
+@media(max-width: 800px){
+	header{
+		height: 1%;
+	}
+
+	header #logo{
+			height: 10%;
+			width: 10%;
+
+	}
+
+
+header h2{
+	float: right;
+	vertical-align: middle;
+	font-family: roboto-bold;
+	font-size: 4vw;
+	color: #00AEEF;
+	position: relative;
+	top:25%;
+	right: 10%;
+}
+
+
+.subHeader{
+	margin-top: 5%;
+	margin-bottom: 2%;
+
+}
+
+.subHeader h3{
+	font-size: 2.75vw;
+}
+
+.welcome p{
+	line-height: 50%;
+	font-size: 2vw;
+}
+
+.welcome {
+	left: 0;
+	margin-bottom: 5%;
+}
+
+#fail p{
+	font-size: 2vw;	
+}
+
+#success p{
+	font-size: 2vw;
+}
+
+.subHeader a{
+	font-size: 1.5vw;
+}
+
+#form1 h3{
+	 font-size: 2.75vw;
+
+}
+
+#form1 label{
+		font-size: 2vw;	
+}	
+
+#form1 input{     
+	height: 3vw;
+}
+
+#form1 label{
+		
+		margin: 0.5vw;
+		margin-top: 0;
+		font-size: 2vw;
+
+}	
+
+
 }

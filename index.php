@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Registo | GOMA</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="David Parreira">
 	<meta name="keywords" content="GOMA, Front End, WebSite Development">
 	<meta name="description" content="Registo de Clientes">
@@ -12,19 +11,19 @@
 </head>
 <body>
 	<header>
-		<img id="logo" src="./img/gomalogo.png">
-		<h2>Clientes</h2>	
+		<img id="logo" src="./img/gomalogo.png" class="responsive">
+		<h2>CLIENTES</h2>	
 	</header>
-
 	<section class="subHeader">
+			<h3>BEM-VINDO</h3>
+			<a href="listarClientes.php">Listar Clientes</a>
 		<div class="welcome">
-			<h3>Bem-Vindo</h3>
 			<p> GOMA is a company from Portugal that creates integrated web-based solution.</p>
 			<p>We work with organizations of all sizes to designand build great digital products.</p>
 		</div>
-		<a href="">Listar Clientes</a>
 	</section>
 	<section class="form">
+	
 		<div id="success">
 			<p>Os dados foram inseridos na base de dados<p>
 		</div>
@@ -32,40 +31,41 @@
 			<p>ERRO, Verifique se preencheu os campos devidamente</p>
 		</div>
 		
-		<form id="form1">
-			<h3>Inserir Cliente</h3>
+		<form id="form1" action="includes/controler.php" method="POST">
+			<h3>INSERIR CLIENTE</h3>
 			<label for="name">
 				Nome
 			</label>
-			<input type="text" name="name">
+			<input class="bigField" type="text" name="name">
 			<label for="nif">
 				NIF
 			</label>	
-			<input type="text" name="nif">
+			<input class="smallField" type="number" name="nif">
 			<label for="tel">
 				Telefone
 			</label>
-			<input type="text" name="tel">
+			<input class="smallField" type="number" name="tel">
 			<label for="address">
 				Morada
 			</label>
-			<input type="text" name="address">
+			<input class="bigField" type="text" name="address">
 			<label for="city">
 				Localidade
 			</label>
-			<input type="text" name="city">
+			<input class="smallField" type="text" name="city">
 			<label for="country">
 				País
 			</label>
-			<input list="countries" name="country">
+			<input class="smallField" list="countries"  name="country">
 			<datalist id="countries">
-			    <option value="Chile">
-			    <option value="China">
-			    <option value="Ireland">
-			    <option value="Portugal">
-			    <option value="Spain">
+			    <option value="Chile">Chile</option>
+			    <option value="China">China</option>
+			    <option value="Ireland">Ireland</option>
+			    <option value="Portugal">Portugal</option>
+			    <option value="Spain">Spain</option>
+			   	<option value="Other">Other</option>
 		    </datalist>
-		    <input type="submit" value="Submeter" id="sendBtn">	
+		    <input type="submit" value="SUBMETER" id="sendBtn">	
 		</form>
 		
 	</section>
